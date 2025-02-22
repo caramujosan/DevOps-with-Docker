@@ -1,0 +1,39 @@
+Script started on 2025-02-22 18:34:53-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="114" LINES="29"]
+[?2004h]0;caramujosan@pop-os: ~/Z-prog/DevOpswithDocker[01;32mcaramujosan@pop-os[00m:[01;34m~/Z-prog/DevOpswithDocker[00m$ exitdocker ps -a
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS                      PORTS     NAMES
+dc99b079108b   nginx     "/docker-entrypoint.…"   23 minutes ago   Up 23 minutes               80/tcp    tender_davinci
+5f7e54734750   nginx     "/docker-entrypoint.…"   23 minutes ago   Exited (0) 20 minutes ago             keen_poincare
+110906ba3ab8   nginx     "/docker-entrypoint.…"   36 minutes ago   Exited (0) 35 minutes ago             practical_margulis
+[?2004h]0;caramujosan@pop-os: ~/Z-prog/DevOpswithDocker[01;32mcaramujosan@pop-os[00m:[01;34m~/Z-prog/DevOpswithDocker[00m$ docker ps -a[K[K[K[K[Kimage ls
+[?2004lREPOSITORY   TAG       IMAGE ID       CREATED       SIZE
+nginx        latest    97662d24417b   2 weeks ago   192MB
+[?2004h]0;caramujosan@pop-os: ~/Z-prog/DevOpswithDocker[01;32mcaramujosan@pop-os[00m:[01;34m~/Z-prog/DevOpswithDocker[00m$ docker image ls[K[K[K[K[K[K[K[Kcontainer rm dc 5f 11
+[?2004l5f
+11
+Error response from daemon: cannot remove container "/tender_davinci": container is running: stop the container before removing or force remove
+[?2004h]0;caramujosan@pop-os: ~/Z-prog/DevOpswithDocker[01;32mcaramujosan@pop-os[00m:[01;34m~/Z-prog/DevOpswithDocker[00m$ docker container rm dc 5f 11[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kstop dc
+[?2004ldc
+[?2004h]0;caramujosan@pop-os: ~/Z-prog/DevOpswithDocker[01;32mcaramujosan@pop-os[00m:[01;34m~/Z-prog/DevOpswithDocker[00m$ docker stop dccontainer rm dc 5f 11[K[K[K[K[K[K
+[?2004ldc
+[?2004h]0;caramujosan@pop-os: ~/Z-prog/DevOpswithDocker[01;32mcaramujosan@pop-os[00m:[01;34m~/Z-prog/DevOpswithDocker[00m$ docker container rm dc[8Pstop[C[C[Ccontainer rm dc 5f 11[13Pimage ls[3Pps -a
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h]0;caramujosan@pop-os: ~/Z-prog/DevOpswithDocker[01;32mcaramujosan@pop-os[00m:[01;34m~/Z-prog/DevOpswithDocker[00m$ docker ps -acontainer rm dc[8Pstop[C[C[Ccontainer rm dc 5f 11[13Pimage ls[3Pps -aimage ls
+[?2004lREPOSITORY   TAG       IMAGE ID       CREATED       SIZE
+nginx        latest    97662d24417b   2 weeks ago   192MB
+[?2004h]0;caramujosan@pop-os: ~/Z-prog/DevOpswithDocker[01;32mcaramujosan@pop-os[00m:[01;34m~/Z-prog/DevOpswithDocker[00m$ docker image ls[3Pps -aimage ls[K[K[K rm 97
+[?2004lUntagged: nginx:latest
+Untagged: nginx@sha256:91734281c0ebfc6f1aea979cffeed5079cfe786228a71cc6f1f46a228cde6e34
+Deleted: sha256:97662d24417b316f60607afbca9f226a2ba58f09d642f27b8e197a89859ddc8e
+Deleted: sha256:370743f4a662caa24478adaea2f35df5e064b030d5ae991f99d559cf80484103
+Deleted: sha256:d5d7a9136c37528de696c22750013876035584c16bfce28f4bc5f6d232af6803
+Deleted: sha256:d4f33622e2347fa63ba6c3e6adbd9bd53ed3aa46d28bbc8040a06b1d5965b241
+Deleted: sha256:0712905f64a4cd608351d3de55b34debca1e7f2b43d8105c49df767b84ce6064
+Deleted: sha256:870227b568adc7ac6b9fa4cb7758622126b793a6b70826266e8eda0bf7e071f2
+Deleted: sha256:43379c4e8397d2c249d364065a734b0be1e2f4a546c77451902156e66383efb2
+Deleted: sha256:7914c8f600f532b7adbd0b003888e3aa921687d62dbe2f1f829d0ab6234a158a
+[?2004h]0;caramujosan@pop-os: ~/Z-prog/DevOpswithDocker[01;32mcaramujosan@pop-os[00m:[01;34m~/Z-prog/DevOpswithDocker[00m$ docker image rm 97[3Pls
+[?2004lREPOSITORY   TAG       IMAGE ID   CREATED   SIZE
+[?2004h]0;caramujosan@pop-os: ~/Z-prog/DevOpswithDocker[01;32mcaramujosan@pop-os[00m:[01;34m~/Z-prog/DevOpswithDocker[00m$ exit
+[?2004lexit
+
+Script done on 2025-02-22 18:37:03-03:00 [COMMAND_EXIT_CODE="0"]
