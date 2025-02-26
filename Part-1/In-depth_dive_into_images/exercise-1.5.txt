@@ -1,0 +1,103 @@
+Script started on 2025-02-26 00:14:08-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="108" LINES="30"]
+[?2004h]0;caramujosan@pop-os: ~/Z-prog/DevOpswithDocker/Part-1/In-depth_dive_into_images[01;32mcaramujosan@pop-os[00m:[01;34m~/Z-prog/DevOpswithDocker/Part-1/In-depth_dive_into_images[00m$ [7mdocker run devopsdockeruh/sim[27m[7mp[27m[7mle-web-service:ubuntu[27m[A]0;caramujosan@pop-os: ~/Z-prog/DevOpswithDocker/Part-1/In-depth_dive_into_images[01;32mcaramujosan@pop-os[00m:[01;34m~/Z-prog/DevOpswithDocker/Part-1/In-depth_dive_into_images[00m$ docker run devopsdockeruh/simple-web-service:ubuntu
+Unable to find image 'devopsdockeruh/simple-web-service:ubuntu' locally
+ubuntu: Pulling from devopsdockeruh/simple-web-service
+
+[1A[2K5d3b2c2d21bb: Pulling fs layer [1B
+[1A[2K3fc2062ea667: Pulling fs layer [1B
+[1A[2K75adf526d75b: Pulling fs layer [1B
+[1A[2K965d4bbb586a: Pulling fs layer [1B
+[1A[2K4f4fb700ef54: Pulling fs layer [1B[2A[2K965d4bbb586a: Waiting [2B[1A[2K4f4fb700ef54: Waiting [1B[3A[2K75adf526d75b: Downloading     162B/162B[3B[3A[2K75adf526d75b: Verifying Checksum [3B[3A[2K75adf526d75b: Download complete [3B[5A[2K5d3b2c2d21bb: Downloading  293.1kB/28.57MB[5B[4A[2K3fc2062ea667: Downloading     772B/850B[4B[4A[2K3fc2062ea667: Downloading     850B/850B[4B[4A[2K3fc2062ea667: Download complete [4B[5A[2K5d3b2c2d21bb: Downloading  3.533MB/28.57MB[5B[5A[2K5d3b2c2d21bb: Downloading  8.547MB/28.57MB[5B[5A[2K5d3b2c2d21bb: Downloading  15.29MB/28.57MB[5B[5A[2K5d3b2c2d21bb: Downloading  24.09MB/28.57MB[5B[5A[2K5d3b2c2d21bb: Verifying Checksum [5B[5A[2K5d3b2c2d21bb: Download complete [5B[5A[2K5d3b2c2d21bb: Extracting  294.9kB/28.57MB[5B[2A[2K965d4bbb586a: Downloading  52.51kB/5.117MB[2B[5A[2K5d3b2c2d21bb: Extracting  10.03MB/28.57MB[5B[1A[2K4f4fb700ef54: Downloading      32B/32B[1B[1A[2K4f4fb700ef54: Verifying Checksum [1B[1A[2K4f4fb700ef54: Download complete [1B[2A[2K965d4bbb586a: Downloading  396.5kB/5.117MB[2B[5A[2K5d3b2c2d21bb: Extracting  22.71MB/28.57MB[5B[2A[2K965d4bbb586a: Downloading  4.717MB/5.117MB[2B[2A[2K965d4bbb586a: Downloading  5.117MB/5.117MB[2B[2A[2K965d4bbb586a: Verifying Checksum [2B[2A[2K965d4bbb586a: Download complete [2B[5A[2K5d3b2c2d21bb: Extracting  28.31MB/28.57MB[5B[5A[2K5d3b2c2d21bb: Extracting  28.57MB/28.57MB[5B[5A[2K5d3b2c2d21bb: Pull complete [5B[4A[2K3fc2062ea667: Extracting     850B/850B[4B[4A[2K3fc2062ea667: Extracting     850B/850B[4B[4A[2K3fc2062ea667: Pull complete [4B[3A[2K75adf526d75b: Extracting     162B/162B[3B[3A[2K75adf526d75b: Extracting     162B/162B[3B[3A[2K75adf526d75b: Pull complete [3B[2A[2K965d4bbb586a: Extracting  65.54kB/5.117MB[2B[2A[2K965d4bbb586a: Extracting  5.117MB/5.117MB[2B[2A[2K965d4bbb586a: Pull complete [2B[1A[2K4f4fb700ef54: Extracting      32B/32B[1B[1A[2K4f4fb700ef54: Extracting      32B/32B[1B[1A[2K4f4fb700ef54: Pull complete [1BDigest: sha256:d44e1dce398732e18c7c2bad9416a072f719af33498302b02929d4c112e88d2a
+Status: Downloaded newer image for devopsdockeruh/simple-web-service:ubuntu
+Starting log output
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+^Cexit status 2
+[?2004h]0;caramujosan@pop-os: ~/Z-prog/DevOpswithDocker/Part-1/In-depth_dive_into_images[01;32mcaramujosan@pop-os[00m:[01;34m~/Z-prog/DevOpswithDocker/Part-1/In-depth_dive_into_images[00m$ [7mdocker run devopsdockeruh/sim[27m[7mp[27m[7mle-web-service:alpine[27m[A]0;caramujosan@pop-os: ~/Z-prog/DevOpswithDocker/Part-1/In-depth_dive_into_images[01;32mcaramujosan@pop-os[00m:[01;34m~/Z-prog/DevOpswithDocker/Part-1/In-depth_dive_into_images[00m$ docker run devopsdockeruh/simple-web-service:alpine
+[?2004lUnable to find image 'devopsdockeruh/simple-web-service:alpine' locally
+alpine: Pulling from devopsdockeruh/simple-web-service
+
+[1A[2Kba3557a56b15: Pulling fs layer [1B
+[1A[2K1dace236434b: Pulling fs layer [1B
+[1A[2K4f4fb700ef54: Pulling fs layer [1B[3A[2Kba3557a56b15: Downloading  29.33kB/2.812MB[3B[1A[2K4f4fb700ef54: Downloading      32B/32B[1B[1A[2K4f4fb700ef54: Verifying Checksum [1B[1A[2K4f4fb700ef54: Download complete [1B[2A[2K1dace236434b: Downloading  52.51kB/5.117MB[2B[3A[2Kba3557a56b15: Downloading  429.3kB/2.812MB[3B[2A[2K1dace236434b: Downloading  527.6kB/5.117MB[2B[3A[2Kba3557a56b15: Verifying Checksum [3B[3A[2Kba3557a56b15: Download complete [3B[3A[2Kba3557a56b15: Extracting  32.77kB/2.812MB[3B[3A[2Kba3557a56b15: Extracting  2.812MB/2.812MB[3B[2A[2K1dace236434b: Downloading  4.569MB/5.117MB[2B[2A[2K1dace236434b: Verifying Checksum [2B[2A[2K1dace236434b: Download complete [2B[3A[2Kba3557a56b15: Pull complete [3B[2A[2K1dace236434b: Extracting  65.54kB/5.117MB[2B[2A[2K1dace236434b: Extracting  5.117MB/5.117MB[2B[2A[2K1dace236434b: Pull complete [2B[1A[2K4f4fb700ef54: Extracting      32B/32B[1B[1A[2K4f4fb700ef54: Extracting      32B/32B[1B[1A[2K4f4fb700ef54: Pull complete [1BDigest: sha256:dd4d367476f86b7d7579d3379fe446ae5dfce25480903fb0966fc2e5257e0543
+Status: Downloaded newer image for devopsdockeruh/simple-web-service:alpine
+Starting log output
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+^Cexit status 2
+[?2004h]0;caramujosan@pop-os: ~/Z-prog/DevOpswithDocker/Part-1/In-depth_dive_into_images[01;32mcaramujosan@pop-os[00m:[01;34m~/Z-prog/DevOpswithDocker/Part-1/In-depth_dive_into_images[00m$ docker ps -a
+[?2004lCONTAINER ID   IMAGE                                      COMMAND                 CREATED          STATUS                      PORTS     NAMES
+639a6a585f88   devopsdockeruh/simple-web-service:alpine   "/usr/src/app/server"   15 seconds ago   Exited (2) 11 seconds ago             gracious_swartz
+618d0dbdf698   devopsdockeruh/simple-web-service:ubuntu   "/usr/src/app/server"   40 seconds ago   Exited (2) 36 seconds ago             beautiful_bouman
+[?2004h]0;caramujosan@pop-os: ~/Z-prog/DevOpswithDocker/Part-1/In-depth_dive_into_images[01;32mcaramujosan@pop-os[00m:[01;34m~/Z-prog/DevOpswithDocker/Part-1/In-depth_dive_into_images[00m$  [Kd[K[7mdocker start[27mdocker start 61
+[?2004l61
+[?2004h]0;caramujosan@pop-os: ~/Z-prog/DevOpswithDocker/Part-1/In-depth_dive_into_images[01;32mcaramujosan@pop-os[00m:[01;34m~/Z-prog/DevOpswithDocker/Part-1/In-depth_dive_into_images[00m$ docker start 61[3Pps -a
+[?2004lCONTAINER ID   IMAGE                                      COMMAND                 CREATED              STATUS                          PORTS     NAMES
+639a6a585f88   devopsdockeruh/simple-web-service:alpine   "/usr/src/app/server"   About a minute ago   Exited (2) About a minute ago             gracious_swartz
+618d0dbdf698   devopsdockeruh/simple-web-service:ubuntu   "/usr/src/app/server"   About a minute ago   Up 14 seconds                             beautiful_bouman
+[?2004h]0;caramujosan@pop-os: ~/Z-prog/DevOpswithDocker/Part-1/In-depth_dive_into_images[01;32mcaramujosan@pop-os[00m:[01;34m~/Z-prog/DevOpswithDocker/Part-1/In-depth_dive_into_images[00m$ docker ps -astart 61[1P 61[1P 61[1P 61[1P 61[1P 61r 61u 61n 61
+[?2004lUnable to find image '61:latest' locally
+docker: Error response from daemon: pull access denied for 61, repository does not exist or may require 'docker login': denied: requested access to the resource is denied
+
+Run 'docker run --help' for more information
+[?2004h]0;caramujosan@pop-os: ~/Z-prog/DevOpswithDocker/Part-1/In-depth_dive_into_images[01;32mcaramujosan@pop-os[00m:[01;34m~/Z-prog/DevOpswithDocker/Part-1/In-depth_dive_into_images[00m$ docker run 61[K[K[K[K[K[Kexec -it 61 bahs[K[Ksh
+[?2004l]0;root@618d0dbdf698: /usr/src/approot@618d0dbdf698:/usr/src/app# tail -f       ls
+[0m[01;32mserver[0m  text.log
+]0;root@618d0dbdf698: /usr/src/approot@618d0dbdf698:/usr/src/app# tail -f ./e text.log 
+2025-02-26 03:17:39 +0000 UTC
+2025-02-26 03:17:41 +0000 UTC
+2025-02-26 03:17:43 +0000 UTC
+2025-02-26 03:17:45 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2025-02-26 03:17:47 +0000 UTC
+2025-02-26 03:17:49 +0000 UTC
+2025-02-26 03:17:51 +0000 UTC
+2025-02-26 03:17:53 +0000 UTC
+2025-02-26 03:17:55 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2025-02-26 03:17:57 +0000 UTC
+2025-02-26 03:17:59 +0000 UTC
+2025-02-26 03:18:01 +0000 UTC
+2025-02-26 03:18:03 +0000 UTC
+^C
+]0;root@618d0dbdf698: /usr/src/approot@618d0dbdf698:/usr/src/app# exit
+exit
+exit status 130
+[?2004h]0;caramujosan@pop-os: ~/Z-prog/DevOpswithDocker/Part-1/In-depth_dive_into_images[01;32mcaramujosan@pop-os[00m:[01;34m~/Z-prog/DevOpswithDocker/Part-1/In-depth_dive_into_images[00m$ docker exec -it 61 bash[10Prun 61[1Pps -a
+[?2004lCONTAINER ID   IMAGE                                      COMMAND                 CREATED         STATUS                     PORTS     NAMES
+639a6a585f88   devopsdockeruh/simple-web-service:alpine   "/usr/src/app/server"   3 minutes ago   Exited (2) 3 minutes ago             gracious_swartz
+618d0dbdf698   devopsdockeruh/simple-web-service:ubuntu   "/usr/src/app/server"   3 minutes ago   Up 2 minutes                         beautiful_bouman
+[?2004h]0;caramujosan@pop-os: ~/Z-prog/DevOpswithDocker/Part-1/In-depth_dive_into_images[01;32mcaramujosan@pop-os[00m:[01;34m~/Z-prog/DevOpswithDocker/Part-1/In-depth_dive_into_images[00m$ docker stop 61
+[?2004l61
+[?2004h]0;caramujosan@pop-os: ~/Z-prog/DevOpswithDocker/Part-1/In-depth_dive_into_images[01;32mcaramujosan@pop-os[00m:[01;34m~/Z-prog/DevOpswithDocker/Part-1/In-depth_dive_into_images[00m$ docker stop 61
+[?2004l61
+[?2004h]0;caramujosan@pop-os: ~/Z-prog/DevOpswithDocker/Part-1/In-depth_dive_into_images[01;32mcaramujosan@pop-os[00m:[01;34m~/Z-prog/DevOpswithDocker/Part-1/In-depth_dive_into_images[00m$ docker stop 61[2Pps -a
+[?2004lCONTAINER ID   IMAGE                                      COMMAND                 CREATED         STATUS                     PORTS     NAMES
+639a6a585f88   devopsdockeruh/simple-web-service:alpine   "/usr/src/app/server"   3 minutes ago   Exited (2) 3 minutes ago             gracious_swartz
+618d0dbdf698   devopsdockeruh/simple-web-service:ubuntu   "/usr/src/app/server"   3 minutes ago   Exited (2) 3 seconds ago             beautiful_bouman
+[?2004h]0;caramujosan@pop-os: ~/Z-prog/DevOpswithDocker/Part-1/In-depth_dive_into_images[01;32mcaramujosan@pop-os[00m:[01;34m~/Z-prog/DevOpswithDocker/Part-1/In-depth_dive_into_images[00m$ docker ps -astop 61[2Pps -aexec -it 61 bash[10Prun 61[1Pps -astart 61[K3
+[?2004l63
+[?2004h]0;caramujosan@pop-os: ~/Z-prog/DevOpswithDocker/Part-1/In-depth_dive_into_images[01;32mcaramujosan@pop-os[00m:[01;34m~/Z-prog/DevOpswithDocker/Part-1/In-depth_dive_into_images[00m$ docker start 63[3Pps -astop 61[2Pps -aexec -it 61 bash[C[C[C[1Psh[1Psh[1Psh[1Psh[1Psh6sh3sh sh
+[?2004l/usr/src/app # [6nls
+[1;32mserver[m    [0;0mtext.log[m
+/usr/src/app # [6n/usr/src/app # ls[J/usr/src/app # [Jtail -f ./tes[J/usr/src/app # tail -f ./text.log [J
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2025-02-26 03:19:01 +0000 UTC
+2025-02-26 03:19:03 +0000 UTC
+2025-02-26 03:19:05 +0000 UTC
+2025-02-26 03:19:07 +0000 UTC
+2025-02-26 03:19:09 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2025-02-26 03:19:11 +0000 UTC
+2025-02-26 03:19:13 +0000 UTC
+2025-02-26 03:19:15 +0000 UTC
+2025-02-26 03:19:17 +0000 UTC
+^C
+/usr/src/app # [6nexit
+exit status 130
+[?2004h]0;caramujosan@pop-os: ~/Z-prog/DevOpswithDocker/Part-1/In-depth_dive_into_images[01;32mcaramujosan@pop-os[00m:[01;34m~/Z-prog/DevOpswithDocker/Part-1/In-depth_dive_into_images[00m$ docker exec -it 63 sh[6Pstart 63[3Pps -astop 61[K3
+[?2004l63
+[?2004h]0;caramujosan@pop-os: ~/Z-prog/DevOpswithDocker/Part-1/In-depth_dive_into_images[01;32mcaramujosan@pop-os[00m:[01;34m~/Z-prog/DevOpswithDocker/Part-1/In-depth_dive_into_images[00m$ exit
+[?2004lexit
+
+Script done on 2025-02-26 00:19:37-03:00 [COMMAND_EXIT_CODE="0"]
