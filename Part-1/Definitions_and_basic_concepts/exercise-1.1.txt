@@ -1,0 +1,11 @@
+Script started on 2025-02-22 18:25:27-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="114" LINES="29"]
+[?2004h]0;caramujosan@pop-os: ~/Z-prog/DevOpswithDocker[01;32mcaramujosan@pop-os[00m:[01;34m~/Z-prog/DevOpswithDocker[00m$ exitdocker ps -a
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS                      PORTS     NAMES
+dc99b079108b   nginx     "/docker-entrypoint.…"   13 minutes ago   Up 13 minutes               80/tcp    tender_davinci
+5f7e54734750   nginx     "/docker-entrypoint.…"   14 minutes ago   Exited (0) 11 minutes ago             keen_poincare
+110906ba3ab8   nginx     "/docker-entrypoint.…"   26 minutes ago   Exited (0) 25 minutes ago             practical_margulis
+[?2004h]0;caramujosan@pop-os: ~/Z-prog/DevOpswithDocker[01;32mcaramujosan@pop-os[00m:[01;34m~/Z-prog/DevOpswithDocker[00m$ exit
+[?2004l
+exit
+
+Script done on 2025-02-22 18:25:42-03:00 [COMMAND_EXIT_CODE="0"]
