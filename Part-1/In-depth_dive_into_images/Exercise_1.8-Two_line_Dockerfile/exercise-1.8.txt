@@ -1,0 +1,33 @@
+Script started on 2025-02-26 18:40:45-03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="119" LINES="28"]
+[?2004h]0;caramujosan@pop-os: ~/Z-prog/DevOpswithDocker/Part-1/In-depth_dive_into_images/Exercise_1.8-Two_line_Dockerfile[01;32mcaramujosan@pop-os[00m:[01;34m~/Z-prog/DevOpswithDocker/Part-1/In-depth_dive_into_images/Exercise_1.8-Two_line_Dockerfile[00m$ exitdocker run web-server[7@build . -t[C[C[C[C[C[C[C[C[C[C[C
+[1A[1B[0G[?25l[+] Building 0.0s (0/1)                                                                                 docker:default
+[?25h[1A[0G[?25l[+] Building 0.1s (5/5) FINISHED                                                                        docker:default
+[34m => [internal] load build definition from Dockerfile                                                              0.0s
+[0m[34m => => transferring dockerfile: 195B                                                                              0.0s
+[0m => WARN: JSONArgsRecommended: JSON arguments recommended for CMD to prevent unintended behavior related to OS s  0.0s
+[34m => [internal] load metadata for docker.io/devopsdockeruh/simple-web-service:alpine                               0.0s
+[0m[34m => [internal] load .dockerignore                                                                                 0.0s
+[0m[34m => => transferring context: 2B                                                                                   0.0s
+[0m[34m => CACHED [1/1] FROM docker.io/devopsdockeruh/simple-web-service:alpine                                          0.0s
+[0m[34m => exporting to image                                                                                            0.0s
+[0m[34m => => exporting layers                                                                                           0.0s
+[0m[34m => => writing image sha256:b270552b2b2ffb0226236922340399bbe75cf3e056bbe7003a8c0ee8c16f4391                      0.0s
+[0m[34m => => naming to docker.io/library/web-server                                                                     0.0s
+[0m[?25h
+ [33m1 warning found (use docker --debug to expand):
+[0m - JSONArgsRecommended: JSON arguments recommended for CMD to prevent unintended behavior related to OS signals (line 5)
+[?2004h]0;caramujosan@pop-os: ~/Z-prog/DevOpswithDocker/Part-1/In-depth_dive_into_images/Exercise_1.8-Two_line_Dockerfile[01;32mcaramujosan@pop-os[00m:[01;34m~/Z-prog/DevOpswithDocker/Part-1/In-depth_dive_into_images/Exercise_1.8-Two_line_Dockerfile[00m$ docker build . -t web-server[A]0;caramujosan@pop-os: ~/Z-prog/DevOpswithDocker/Part-1/In-depth_dive_into_images/Exercise_1.8-Two_line_Dockerfile[01;32mcaramujosan@pop-os[00m:[01;34m~/Z-prog/DevOpswithDocker/Part-1/In-depth_dive_into_images/Exercise_1.8-Two_line_Dockerfile[00m$ [3Pexit
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker run web-server
+[?2004l[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /*path                    --> server.Start.func1 (3 handlers)
+[GIN-debug] Listening and serving HTTP on :8080
+^Cexit status 2
+[?2004h]0;caramujosan@pop-os: ~/Z-prog/DevOpswithDocker/Part-1/In-depth_dive_into_images/Exercise_1.8-Two_line_Dockerfile[01;32mcaramujosan@pop-os[00m:[01;34m~/Z-prog/DevOpswithDocker/Part-1/In-depth_dive_into_images/Exercise_1.8-Two_line_Dockerfile[00m$ exit
+[?2004lexit
+
+Script done on 2025-02-26 18:41:15-03:00 [COMMAND_EXIT_CODE="2"]
