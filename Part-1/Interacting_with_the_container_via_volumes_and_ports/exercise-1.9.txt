@@ -1,0 +1,23 @@
+Script started on 2025-02-27 21:20:15-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="110" LINES="30"]
+[?2004h]0;caramujosan@pop-os: ~/Z-prog/DevOpswithDocker/Part-1/Interacting_with_the_container_via_volumes_and_ports/text.log[01;32mcaramujosan@pop-os[00m:[01;34m~/Z-prog/DevOpswithDocker/Part-1/Interacting_with_the_container_via_volumes_and_ports/text.log[00m$ exitdocker image ls[K
+REPOSITORY                          TAG       IMAGE ID       CREATED        SIZE
+curler-v2                           latest    5e2922539c5d   24 hours ago   145MB
+curler                              latest    c9296639bbca   28 hours ago   145MB
+devopsdockeruh/simple-web-service   alpine    fd312adc88e0   3 years ago    15.7MB
+web-server                          latest    b270552b2b2f   3 years ago    15.7MB
+[?2004h]0;caramujosan@pop-os: ~/Z-prog/DevOpswithDocker/Part-1/Interacting_with_the_container_via_volumes_and_ports/text.log[01;32mcaramujosan@pop-os[00m:[01;34m~/Z-prog/DevOpswithDocker/Part-1/Interacting_with_the_container_via_volumes_and_ports/text.log[00m$ exitdocker run --mount type=bind,src=$PWD/text.log,dst=/usr/src/app/text.log fd
+[?2004lStarting log output
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+^C[?2004h]0;caramujosan@pop-os: ~/Z-prog/DevOpswithDocker/Part-1/Interacting_with_the_container_via_volumes_and_ports/text.log[01;32mcaramujosan@pop-os[00m:[01;34m~/Z-prog/DevOpswithDocker/Part-1/Interacting_with_the_container_via_volumes_and_ports/text.log[00m$ exit
+[?2004lexit
+
+Script done on 2025-02-27 21:20:47-03:00 [COMMAND_EXIT_CODE="2"]
