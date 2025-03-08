@@ -1,0 +1,19 @@
+services:
+  frontend:
+    image: frontend-app
+    ports: 
+      - 127.0.0.1:5000:5000
+    depends_on:
+      - backend
+    
+  backend: 
+    image: backend-app
+    ports:
+      - 127.0.0.1:8080:8080
+    env_file: "redis_env"
+    restart: unless-stopped
+      
+  redis_db:
+    image: redis:latest
+
+    
