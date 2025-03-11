@@ -1,0 +1,43 @@
+services:
+  frontend:
+    image: frontend-app
+    ports: 
+      - 127.0.0.1:5000:5000
+    depends_on:
+      - backend
+    
+  backend: 
+    image: backend-app
+    ports:
+      - 127.0.0.1:8080:8080
+    environment:
+      REDIS_HOST: redis_db
+      POSTGRES_HOST: db #The hostname for postgres database. (port will default to 5432 the default for Postgres)
+      POSTGRES_PASSWORD: postgres
+      # database name. Default: postgres
+      POSTGRES_DATABASE: postgres
+    restart: unless-stopped
+    depends_on:
+      - db
+      
+  redis_db:
+    image: redis:latest
+    
+  db:
+    image: postgres:latest
+    restart: unless-stopped
+    # set shared memory limit when using docker-compose
+    shm_size: 128mb
+    volumes: 
+        - /home/caramujosan/Z-prog/DevOpswithDocker/Part-2/2.4-Volumes_in_action/exercise-2.7/data:/var/lib/postgresql/data
+    environment: 
+      # database user. Default: postgres
+      POSTGRES_USER: postgres
+      # database password. Default: postgres
+      POSTGRES_PASSWORD: postgres 
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+

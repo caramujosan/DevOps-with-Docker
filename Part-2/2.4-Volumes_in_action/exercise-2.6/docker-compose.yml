@@ -1,0 +1,38 @@
+services:
+  frontend:
+    image: frontend-app
+    ports: 
+      - 127.0.0.1:5000:5000
+    depends_on:
+      - backend
+    
+  backend: 
+    image: backend-app
+    ports:
+      - 127.0.0.1:8080:8080
+    environment:
+      REDIS_HOST: redis_db
+      POSTGRES_HOST: db #The hostname for postgres database. (port will default to 5432 the default for Postgres)
+      # database name. Default: postgres
+      POSTGRES_DATABASE: postgres
+    restart: unless-stopped
+      
+  redis_db:
+    image: redis:latest
+    
+  db:
+    image: postgres:latest
+    restart: unless-stopped
+    # set shared memory limit when using docker-compose
+    shm_size: 128mb
+    # or set shared memory limit when deploy via swarm stack
+    #volumes:
+    #  - type: tmpfs
+    #    target: /dev/shm
+    #    tmpfs:
+    #      size: 134217728 # 128*2^20 bytes = 128Mb
+    environment: 
+      # database user. Default: postgres
+      POSTGRES_USER: postgres
+      # database password. Default: postgres
+      POSTGRES_PASSWORD: postgres

@@ -1,0 +1,45 @@
+services:
+  reverse-proxy:
+    image: nginx:stable-alpine
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - "127.0.0.1:80:80"
+    depends_on:
+      - frontend
+      - backend
+
+  frontend:
+    image: port-close-frontend
+    #ports:
+    #  - "5000:5000"
+    depends_on:
+      - backend
+
+  backend:
+    image: port-close-backend
+    #ports:
+    #  - "8080:8080"
+    environment:
+      REDIS_HOST: redis_db
+      POSTGRES_HOST: db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DATABASE: postgres
+    depends_on:
+      - db
+      - redis_db
+
+  redis_db:
+    image: redis:latest
+
+  db:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - ./data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+
