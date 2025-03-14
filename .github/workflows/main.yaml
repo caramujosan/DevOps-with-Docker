@@ -7,11 +7,12 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    
     steps:
-      - uses: JorgeLNJunior/render-deploy@v1.4.5
-        with:
-          context: Part-3/3.2-Deployment_pipelines/exercise-3.2-Deployment_pipeline_to_a_cloud_service
-          service_id: ${{ secrets.RENDER_SERVICE_ID }}
-          api_key: ${{ secrets.RENDER_API_KEY }}
-          wait_deploy: true
+      uses: JorgeLNJunior/render-deploy@v1.4.5
+      with:
+        context: Part-3/3.2-Deployment_pipelines/exercise-3.2-Deployment_pipeline_to_a_cloud_service
+        service_id: ${{ secrets.RENDER_SERVICE_ID }}
+        api_key: ${{ secrets.RENDER_API_KEY }}
+        wait_deploy: true
 
