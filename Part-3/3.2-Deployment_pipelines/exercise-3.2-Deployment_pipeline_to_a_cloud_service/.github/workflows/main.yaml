@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+    paths: 
+      - Part-3/3.2-Deployment_pipelines/express-app/.github/workflows/main.yaml
 
 jobs:
   build:  # name of the job
