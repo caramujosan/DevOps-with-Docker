@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths: 
-      - Part-3/3.2-Deployment_pipelines/express-app/.github/workflows/main.yaml
+      - Part-3/3.2-Deployment_pipelines/exercise-3.2-Deployment_pipeline_to_a_cloud_service
 
 jobs:
   build:  # name of the job
