@@ -11,22 +11,23 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+      uses: actions/checkout@v4
 
-      - name: Log in to DockerHub
-        uses: docker/login-action@v2
-        with:
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
+      - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v3
 
-      - name: Build Docker Image
-        run: |
-          docker build -t my-app:latest .
+      - name: Log in to Docker Hub
+      uses: docker/login-action@v3
+      with:
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
 
-      - name: Push Docker Image
-        run: |
-          docker tag my-app:latest my-dockerhub-username/my-app:latest
-          docker push my-dockerhub-username/my-app:latest
+      - name: Build and push Docker image
+      uses: docker/build-push-action@v6
+      with:
+        context: Part-3/3.2-Deployment_pipelines/exercise-3.2-Deployment_pipeline_to_a_cloud_service
+        push: true
+        tags: ${{ secrets.DOCKER_USERNAME }}/spring-app-deploy
 
       - name: Deploy to Render
         uses: JorgeLNJunior/render-deploy@v1.4.5
