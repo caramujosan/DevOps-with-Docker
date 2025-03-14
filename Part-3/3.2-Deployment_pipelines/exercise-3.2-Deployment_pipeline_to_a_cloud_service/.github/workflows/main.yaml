@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths: 
-      - Part-3/3.2-Deployment_pipelines/exercise-3.2-Deployment_pipeline_to_a_cloud_service
+      - ./Part-3/3.2-Deployment_pipelines/exercise-3.2-Deployment_pipeline_to_a_cloud_service
 
 jobs:
   build:  # name of the job
