@@ -3,8 +3,8 @@ on:
   push:
     branches:
       - main
-      
-jobs:
+  
+jobs:     
   deploy:
     runs-on: ubuntu-latest
     permissions:
@@ -20,4 +20,3 @@ jobs:
           github_deployment: true
           deployment_environment: 'staging'
           github_token: ${{ secrets.GITHUB_TOKEN }}
-
