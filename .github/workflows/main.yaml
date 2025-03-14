@@ -8,15 +8,15 @@ on:
       #- DevOps-with-Docker/Part-3/3.2-Deployment_pipelines/exercise-3.2-Deployment_pipeline_to_a_cloud_service/**
 
 jobs:
-  build:  # name of the job
-    runs-on: ubuntu-latest
+  #build:  # name of the job
+   # runs-on: ubuntu-latest
 
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
+   # steps:
+   # - name: Checkout repository
+   #   uses: actions/checkout@v4
 
-    - name: Set up Docker Buildx
-      uses: docker/setup-buildx-action@v3
+   # - name: Set up Docker Buildx
+   #   uses: docker/setup-buildx-action@v3
  
   deploy:
     runs-on: ubuntu-latest
