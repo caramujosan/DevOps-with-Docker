@@ -1,0 +1,8 @@
+docker run --rm -e DOCKER_USER=caramujosan -e DOCKER_PWD=dockdamn775 -v /var/run/docker.sock:/var/run/docker.sock builder mluukkai/express_app caramujosan/express_app
+
+=====================
+
+WARNING! Your credentials are stored unencrypted in '/root/.docker/config.json'.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/go/credential-store/
+
